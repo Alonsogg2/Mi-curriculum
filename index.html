@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Curriculum</title>
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+      <h1>Alonso Gamboa Godínez</h1>
+    </header>
+    <section class="section">
+        <article class="article__header">
+            
+            <label  onclick="viewMy()" class="article__title"><strong>¿Quién soy?</strong></label>
+        </article>
+
+        <article id="titulo1" class="article__myData">
+            <img class="article__images" src="images/fotoPerfil.png"></img>
+            <p>Mi nombre es Freddy Alonso Gamboa Godínez tengo 22 años, actualmente estoy sacando la carrera de informática empresarial. A la hora de desarrollar un software me gusta lo relacionado con Backend y análisis.</p>
+        </article>
+
+        <article class="article__header">
+        <label  onclick="viewData()" class="article__title"><strong>Datos personales</strong></label>
+        </article>
+
+        <article class="article" id="titulo2">
+            <label><img class="article__icon" src="icons/identificacion.png" /><strong>Cédula:</strong> 1-16910917</label>
+            <label><img class="article__icon" src="icons/nombre.png" /><strong>Nombre:</strong> Freddy Alonso Gamboa Godínez</label>
+            <label><img class="article__icon" src="icons/direccion.png" /><strong>Dirección:</strong> Frente al Abastecedor Guadalupe en el Cocal</label>
+            <label><img class="article__icon" src="icons/telefono.png" /><strong>Número de telefono:</strong> 85117526</label>
+            <label><img class="article__icon" src="icons/correo.png" /><strong>Correo electrónico:</strong> gamboagf97alonso@gmail.com</label>
+            <label><img class="article__icon" src="icons/fechaNacimiento.png" /><strong>Fecha de nacimiento:</strong> 24-10-1997</label>
+        </article>
+        
+        <article  class="article__header">
+            <label onclick="viewAbilities()" class="article__title"><strong>Habilidades</strong></label>
+        </article>
+        <article class="article__abilities" id="titulo3">
+            <label>JAVA</label>
+            <label>Muy bueno</label>
+            <label>C#</label>
+            <label>Muy bueno</label>
+            <label>PYTHON</label>
+            <label>Regular</label>
+            <label>ASP.NET</label>
+            <label>Bueno</label>
+            <label>HTML</label>
+            <label>Regular</label>
+            <label>CSS</label>
+            <label>Regular</label>
+            <label>SQL</label>
+            <label>Bueno</label>
+        </article>
+      
+    </section>
+    
+     <script>
+       document.write('<section class="section__section2">  <article class="article__header"> <label class="article__title">Datos personales</label></article><article class="article">'
+        +document.getElementById("titulo2").innerHTML+
+        '</article>  <article class="article__header">  <label class="article__title">Habilidades</label></article><article class="article__abilities">'
+        +document.getElementById("titulo3").innerHTML+
+        '</article></section>');
+       // document.write('<section id="section2" class="section__section2">'+document.getElementById("titulo3").innerHTML+'</section>')
+            
+    </script>
+    
+
+    <footer class="footer">
+        <label style="color:white">Autor: Alonso Gamboa Godínez <br> Año: 2020 <br>Profesora: Dharizza Espinach Barahona</label>
+    </footer>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
